@@ -12,12 +12,13 @@ public class Main {
 
         Employee employee = new Employee("Jane", "Doe");
 
-        Product product = new Books(new Author("Jack", "Smith"));
+        Product product = new Books("New Book",5.00, 1,  new Author("Jack", "Smith"));
 
         InventoryService inventoryService = new InventoryServiceImpl(product);
 
         inventoryService.addProduct(product);
 
-        inventoryService.getProduct();
+        System.out.println(inventoryService.getProduct());
+
     }
 }

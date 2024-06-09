@@ -7,7 +7,8 @@ public class Electronics extends Product {
 
     public Brand brand;
 
-    public Electronics(Brand brand) {
+    public Electronics(String name, double price, int stockLevel, Brand brand) {
+        super(name, price, stockLevel);
         this.brand = brand;
     }
 

@@ -6,6 +6,12 @@ public abstract class Product {
     private double price;
     private int stockLevel;
 
+    public Product(String name, double price, int stockLevel) {
+        this.name = name;
+        this.price = price;
+        this.stockLevel = stockLevel;
+    }
+
     public String getName() {
         return name;
     }
@@ -28,5 +34,14 @@ public abstract class Product {
 
     public void setStockLevel(int stockLevel) {
         this.stockLevel = stockLevel;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", stockLevel=" + stockLevel +
+                '}';
     }
 }
